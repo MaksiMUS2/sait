@@ -3,9 +3,26 @@ body {
     font-size: 16px; /* Размер основного шрифта в <p></p>  */
     background-color: rgb(255, 255, 255); /* Цвет фона веб-страницы */
     color: #000000; /* Цвет основного текста */
+
 }
-h1 {
-    color: #5988FF; /* Цвет заголовка */
-    font-size: 24px; /* Размер шрифта в пунктах */
-    font-family: Gill Sans, sans-serif; /* Семейство шрифтов */
-}
+
+@keyframes color-change {
+    0% {
+        color:#8360c3;
+    }
+      
+    50% {
+        color:#2ebf91;
+    }
+      
+    100% {
+        color:#8360c3;
+    }
+ }
+    
+    h1 {
+        color: #5988FF; /* Цвет заголовка */
+        font-size: 24px; /* Размер шрифта в пунктах */
+        font-family: Gill Sans, sans-serif; /* Семейство шрифтов */
+        animation: color-change 3s infinite;
+    }
